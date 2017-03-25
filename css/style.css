@@ -1,0 +1,57 @@
+/* https://yeun.github.io/open-color/ */
+
+* {
+  box-sizing: border-box;
+}
+
+.pane-left, .pane-right {
+  position: absolute;
+  height: 100vh;
+}
+
+.pane-left {
+  left: 0;
+  width: calc(100vw - 320px);
+  overflow: auto;
+  border-right: 1px solid #868e96;
+}
+
+.pane-right {
+  right: 0;
+  width: 320px;
+}
+
+.panel-drop {
+  height: 20vh;
+  text-align: center;
+  border-bottom: 1px solid #868e96;
+}
+
+.panel-drop span { line-height: 20vh; }
+
+.btn-update {
+  width: 100%;
+  height: 60px;
+}
+
+.panel-options {
+  height: 80vh;
+  overflow: auto;
+}
+
+.panel-options .config-row {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.panel-options .config-row input[type="text"],
+.panel-options .config-row textarea {
+  margin-top: 5px;
+  width: 100%;
+  font-family: monospace;
+}
+
+.panel-options .config-row input[type="checkbox"],
+.panel-options .config-row select {
+  margin-left: 5px;
+}

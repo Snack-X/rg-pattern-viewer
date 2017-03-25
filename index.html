@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rhythm Game Pattern Viewer</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="pane-left"></section>
+  <section class="pane-right">
+    <div class="panel-drop">
+      <span>Drop .json file here</span>
+    </div>
+    <div class="panel-options">
+      <button class="btn-update">Update</button>
+      <div class="config-row">
+        <label>Base time offset</label>
+        <input type="text" id="options-start" value="0">
+      </div>
+      <div class="config-row">
+        <label>Base BPM</label>
+        <input type="text" id="options-baseBpm" value="120">
+      </div>
+      <div class="config-row">
+        <label>Upbeat</label>
+        <input type="text" id="options-upbeat" value="0">
+      </div>
+      <div class="config-row">
+        <label>Beats per column</label>
+        <input type="text" id="options-beatsPerColumn" value="16">
+      </div>
+      <div class="config-row">
+        <label>Style</label>
+        <select id="options-style">
+          <option value="pink">Pink</option>
+          <option value="blue">Blue</option>
+          <option value="orange">Orange</option>
+          <option value="black" selected>Black</option>
+        </select>
+      </div>
+      <div class="config-row">
+        <label>Mirror</label>
+        <input type="checkbox" id="options-mirror">
+      </div>
+      <div class="config-row">
+        <label>BPM changes</label>
+        <textarea id="options-sofuran" rows="4"></textarea>
+      </div>
+      <div class="config-row">
+        <label>Measure length changes</label>
+        <textarea id="options-measure" rows="4"></textarea>
+      </div>
+      <div class="config-row">
+        <label>Column length changes</label>
+        <textarea id="options-column" rows="4"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bundle.js"></script>
+</body>
+</html>
